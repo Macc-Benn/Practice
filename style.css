@@ -6,10 +6,6 @@
     font-family: 'poppins', sans-serif;
 }
 
-/* body {
-    padding-bottom: 50px;
-} */
-
 /***** TOP NAVIGATION BAR *****/
 
 .topnavbar {
@@ -523,6 +519,7 @@ input:focus {
 }
 
 .newsletter button {
+    cursor: pointer;
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
