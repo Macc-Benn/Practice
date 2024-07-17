@@ -462,6 +462,10 @@ footer {
     color: rgb(124, 119, 119);
 }
 
+.socials img {
+    width: 10%;
+}
+
 .contacts .socials img:hover {
     cursor: pointer;
     border-radius: 30px;
