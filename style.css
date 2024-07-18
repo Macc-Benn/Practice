@@ -11,10 +11,11 @@
 .topnavbar {
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 3px -1px grey;
+    border-bottom: 0.1px solid rgb(235, 232, 232);
     position: fixed;
     background-color: #fff;
     z-index: 9999;
+    position: fixed;
 }
 
 .container {
@@ -31,6 +32,7 @@
     box-sizing: border-box;
     align-items: center;
     display: flex;
+    gap: 20px;
 }
 
 .logo a {
@@ -45,14 +47,13 @@
 }
 
 .logo img {
-    width: 8%;
+    width: 25px;
 }
 
 .navbuttons {
     display: flex;
     align-items: left;
     gap: 30px;
-    margin-left: -150px;
 }
 
 .navbuttons a {
@@ -82,22 +83,24 @@
 }
 
 .rightpane img {
-    width: 15px;
+    width: 20px;
 }
 
 .rightpane img:hover {
-    background-color: rgb(77, 77, 216);
+    background-color: rgb(194, 194, 194);
     transition: 0.3s;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .rightpane p {
     font-size: small;
     color: black;
+    padding: 10px 4px;
+    border-radius: 3px;
 }
 
 .rightpane p:hover {
-    color: rgb(77, 77, 216);
+    background-color: rgb(235, 232, 232);
     transition: 0.3s;
 }
 
@@ -120,10 +123,10 @@
 /******* MAIN CONTENT ******/
 
 main {
-    margin-top: 10%;
+    top: 0;
+    margin-top: 120px;
     margin-left: 10%;
     margin-right: 10%;
-    position: relative;
 }
 
 /****** Hero Content ******/
@@ -172,22 +175,25 @@ main {
 }
 
 .herobottom img {
-    width: 15px;
+    width: 20px;
 }
 
 .herobottom img:hover {
-    background-color: rgb(77, 77, 216);
+    background-color: rgb(194, 194, 194);
     transition: 0.3s;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .herobottom p {
     font-size: small;
     color: black;
+    padding: 10px 4px;
+    border-radius: 3px;
 }
 
 .herobottom p:hover {
-    color: rgb(77, 77, 216);
+    background-color: rgb(235, 232, 232);
+    transition: 0.3s;
 }
 
 .herobottom .download {
