@@ -312,6 +312,7 @@ main {
     width: 100%;
     flex-wrap: wrap;
     gap: 1%;
+    justify-content: center;
 }
 
 .secondary-ads .left-ads {
@@ -365,20 +366,20 @@ main {
 .secondary-ads .right-ads {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     margin-top: 6.25em;
-    width: 50%;
+    width: 400px;
+    height: 350px;
     background: linear-gradient(to bottom right, #d3d3d3, #a9a9a9);
     border-radius: 10px;
 }
 
 .right-ads img {
-    right: 0 !important;
     width: 18.75em;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 10px;
     height: 18.75em;
     box-shadow: -4px 3px 11px 1px grey;
-    position: relative;
 }
 
 /****** BOTTOM HERO CONTENT ******/
@@ -565,7 +566,7 @@ input:focus {
     }
 
     .right-ads {
-        width: auto !important;
+        width: 100% !important;
     }
 
     .herocontent {
