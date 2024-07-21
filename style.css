@@ -311,12 +311,11 @@ main {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    gap: 1%;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .secondary-ads .left-ads {
-    width: 49%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -393,13 +392,13 @@ main {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 50px 10%;
 }
 
 .content-text h1 {
     margin-left: 20%;
     margin-right: 20%;
-    font-size: 40px;
+    font-size: 2.5vw;
     text-align: center;
     color: #fff;
 }
@@ -414,13 +413,14 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    font-size: 1.5vw;
     gap: 10px;
     color: white;
     padding: 10px;
 }
 
 .content-button img {
-    width: 20px;
+    width: 2vw;
     background-color: rgb(77, 77, 216);
     border-radius: 10px;
 }
@@ -437,7 +437,6 @@ main {
 
 footer {
     width: 100%;
-    padding-top: 10px;
     border-top: 0.5px solid rgb(211, 204, 204);
 }
 
@@ -530,6 +529,7 @@ input:focus {
     font-size: 17px;
     color: rgb(105, 102, 102);
     padding: 5px;
+    text-align: center;
 }
 
 .newsletter button {
@@ -592,6 +592,18 @@ input:focus {
         margin-left: 0 !important;
     }
 
+    .content-text h1 {
+        font-size: 20px !important;
+    }
+
+    .content-button img {
+        width: 15px;
+    }
+
+    .content-button p {
+        font-size: 12px;
+    }
+
     .footer {
         display: flex !important;
         flex-wrap: wrap !important;
@@ -601,7 +613,17 @@ input:focus {
 
     .newsletter {
         width: 100% !important;
-        align-items: center;
+        /* align-items: center; */
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .left-ads {
+        width: 100% !important;
+    }
+
+    .secondary-ads {
+        justify-content: center;
     }
 }
 
@@ -685,15 +707,38 @@ input:focus {
         margin: 0 auto;
     }
 
-    footer {
+    .footer {
         width: 100%;
         max-width: 1200px;
-        margin: 100px auto;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1720px) {
+    .content-text h1 {
+        font-size: 43px;
     }
 }
 
 @media (max-width: 1345px) {
     .footer {
         padding: 50px 10%;
+    }
+}
+
+@media (min-width: 900px) {
+    .content-button a {
+        font-size: smaller
+    }
+
+    .content-button img {
+        width: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-wrap: wrap;
+        display: block;
     }
 }
