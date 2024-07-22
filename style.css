@@ -566,7 +566,8 @@ input:focus {
     }
 
     .right-ads {
-        width: 100% !important;
+        width: 400px;
+        max-width: 100%;
     }
 
     .herocontent {
@@ -609,11 +610,31 @@ input:focus {
         flex-wrap: wrap !important;
         justify-content: center !important;
         gap: 10px;
+        flex-direction: column;
+        gap: 30px;
+        font-size: smaller;
+    }
+
+    .contacts,
+    .services,
+    .resources {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .contacts .socials {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .socials img {
+        width: 20px;
     }
 
     .newsletter {
         width: 100% !important;
-        /* align-items: center; */
     }
 }
 
@@ -682,8 +703,30 @@ input:focus {
 }
 
 @media (max-width: 366px) {
+
+    .rightpane .download {
+        display: none;
+    }
+
     .heroright .financeimg {
         display: none;
+    }
+
+    .herocontent .text1 h1,
+    .main-text h1,
+    .features-texts h1 {
+        font-size: calc(6vw + 5vh + 2vmin);
+    }
+
+    .herobottom {
+        flex-wrap: wrap;
+    }
+
+    .right-ads img {
+        width: 100%;
+        height: 100%;
+        max-width: 16.75rem;
+        max-height: 16.75rem;
     }
 }
 
@@ -733,12 +776,5 @@ input:focus {
 
     .content-button img {
         width: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    .footer {
-        flex-wrap: wrap;
-        display: block;
     }
 }
